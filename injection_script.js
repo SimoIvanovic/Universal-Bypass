@@ -2230,9 +2230,9 @@ ensureDomLoaded(()=>{
 		})
 	})
 	//cheater.run
-	hrefBypass("cheater.run", () => {
+	domainBypass("cheater.run", () => {
 		ensureDomLoaded(() => {
-			ifElement(".dw-link[href]", a => {
+			ifElement("a.dw-link[href]", a => {
 				safelyAssign(a.href)
 			})
 		})
